@@ -1,0 +1,45 @@
+@import 'bulma';
+
+h1 {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgb(30, 37, 44);
+  font-size: 30px;
+}
+
+h2 {
+  font-family: Quicksand, sans-serif;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.autocomplete {
+  margin-bottom: 30px;
+}
+
+.spacer {
+  min-height: 40px;
+}
+
+button {
+  background-color: rgb(98, 77, 224);
+}
+
+.card {
+  border-radius: 5px;
+  font-family: Quicksand, sans-serif;
+}
+
+input { 
+  border-radius: 5px;
+  font-family: Quicksand, sans-serif;
+  min-height: 48px;
+}
