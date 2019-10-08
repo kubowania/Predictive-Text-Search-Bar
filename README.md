@@ -119,3 +119,7 @@ This is what allows us to map over the Card Component up to 3 times. The Card Co
 It was important for me to get the brand essence of Lyvly. To do so I inspected the website and chose the exact HEX  and RGB colour codes and fonts to create my app.
 
 Thank you
+
+## Visuals
+
+To start my app please download the project and type 'npm run serve' to start the project on localhost:8000
