@@ -122,4 +122,7 @@ Thank you
 
 ## Visuals
 
-To start my app please download the project and type 'npm run serve' to start the project on localhost:8000
+To start my app please:
+* Download the project
+* Type 'npm i' in terminal to download the necessary packages
+* Type 'npm run serve' to start the project on localhost:8000
