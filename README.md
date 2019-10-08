@@ -5,11 +5,11 @@ Search bar and Bonus question
 ## Overview
 Develop a predictive text mechanism similar to what you see on smartphone keyboards. Given an input sequence of characters, you should output the 3 most likely words the user is trying to type, including prefix matches. For example, with the input “di” you might suggest [“did”, “dinner”, “didn’t”]. It is fine to have fewer than 3 matches where others aren’t possible, e.g. “newe” might only return [“newer”, “newest”]
 
-* Prior data
+### Prior data
 
 Assume you have a corpus of 100k email or text messages you can train on, and this is your only source of data, not an external dictionary of words. You may assume that everything is in your target language but may of course include legitimate abbreviations like “brb” or “omg”. You can find such corpuses available free online (also feel free to use other example ones - e.g. a corpus of irc/messenger chats or whatever is available).
 
-* Bonus
+### Bonus
 
 Suggest near matches where the user has made a slight mistake, e.g. given “nebe” you might suggest [“never”], or “pelp” might return [“peep”, “people”]. Don’t worry about doing this if you have run over time.
 
@@ -38,7 +38,7 @@ Here is a quick skim read of my approach to the project:
 * Find the right API for the job.
 * Decided to build it all in one simple app.js file - frontend.
 * Decide to use React for the job and state.
-*, First of all, I focused on getting all the countries showing up in my state.
+* First of all, I focused on getting all the countries showing up in my state.
 * Write a filter function that filters country.name by what we type in the query search bar from the start. Make sure to convert all queries to lower case before filtering (this counts for this.state too).
 * map the ‘filteredCountries’ onto my Card Component that I made and imported into app.js
 * Make sure to keep the card responses to maximum 3 using slice.
