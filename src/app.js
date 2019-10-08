@@ -7,7 +7,7 @@ import _ from 'lodash'
 
 class App extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       countries: [],
       query: ''
@@ -30,18 +30,18 @@ class App extends React.Component {
 
   // if filteredCountries.length === 0 && this.state.query.length > 0
   //return
-    suggestedCountries() {
-      const re = new RegExp(this.state.query, 'i')
-      const filterCountries = _.filter(this.state.countries, country => {
-        return re.test(country.name) && this.state.query.length > 0
-      })
-      const sortedCountries = _.orderBy(filterCountries)
-      return sortedCountries
-    }
+  suggestedCountries() {
+    const re = new RegExp(this.state.query, 'i')
+    const filterCountries = _.filter(this.state.countries, country => {
+      return re.test(country.name) && this.state.query.length > 0
+    })
+    const sortedCountries = _.orderBy(filterCountries)
+    return sortedCountries
+  }
 
 
   render() {
-    let filteredCountries = this.state.countries.filter(country => {
+    const filteredCountries = this.state.countries.filter(country => {
       return (
         this.state.query.length > 0 &&
         country.name.toLowerCase().startsWith(this.state.query.toLowerCase())
@@ -72,12 +72,12 @@ class App extends React.Component {
               <div className="columns is-multiline">
                 {filteredCountries.slice(0, 3).map(country =>
                   <div className="column is-one-third-tablet is-one-third-desktop" key={country.alpha2Code}>
-                      <Card
-                        name={country.name}
-                      />
+                    <Card
+                      name={country.name}
+                    />
                   </div>
                 )
-              }
+                }
               </div>
             </div>
 
@@ -85,23 +85,21 @@ class App extends React.Component {
             <div className="suggestionbox">
               <h2>Alternative suggestions:</h2>
               <hr/>
-                <div className="columns is-multiline">
-                    {this.suggestedCountries().slice(0, 3).map(country =>
-                      <div className="column is-one-third is-one-third-desktop" key={country.alpha2Code}>
-                        <Card
-                          name={country.name}
-                        />
-                      </div>
-                    )}
-                 </div>
-             </div>
-
-
+              <div className="columns is-multiline">
+                {this.suggestedCountries().slice(0, 3).map(country =>
+                  <div className="column is-one-third is-one-third-desktop" key={country.alpha2Code}>
+                    <Card
+                      name={country.name}
+                    />
+                  </div>
+                )}
+              </div>
+            </div>
 
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
