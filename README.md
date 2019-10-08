@@ -116,6 +116,6 @@ This is what allows us to map over the Card Component up to 3 times. The Card Co
 
 ## Visuals
 
-It was important for me to get the brand essence of Lyvly. To do so I inspected the website and chose the exact HOX colour codes and fonts to create my app.
+It was important for me to get the brand essence of Lyvly. To do so I inspected the website and chose the exact HEX  and RGB colour codes and fonts to create my app.
 
 Thank you
