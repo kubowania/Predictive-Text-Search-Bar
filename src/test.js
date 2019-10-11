@@ -67,7 +67,7 @@ tree.print()
 console.log(tree.search('Uruguay'))
 
 
-// 3. Get array to filter down as we KeyUp each letter of the chosen search terminal
+// 3. Get array to filter down as we KeyUp each letter of the chosen search term.
 
 // 4. Limit array to maximum 3 closest matches - ie the first three as we are filtering alphabetically now.
 

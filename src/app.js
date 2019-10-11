@@ -44,7 +44,6 @@ class App extends React.Component {
 
 
   render() {
-    console.log(this.state)
     const filteredCountries = this.state.countries.filter(country => {
       return (
         this.state.query.length > 0 &&
