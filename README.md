@@ -128,8 +128,8 @@ To start my app please:
 .
 # Update and improvements
 
-First submission: Tuesday October 8th 12.32PM
-Second submission: Friday October 11th 13.00PM
+* First submission: Tuesday October 8th 12.32PM
+* Second submission: Friday October 11th 13.00PM
 
 ## Feedback
 
