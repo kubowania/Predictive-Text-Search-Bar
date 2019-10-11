@@ -149,7 +149,7 @@ I was very intrigued about the Prefix Tries. As I do not have any background in 
 
 * Research Prefix Tries
 * Reproduce my challenge in a seperate file called test.js
-* Use a test array, a mixed up array of Country names, based off the API i was using previously. This was done to avoid making api requests for the time being and ficus on solving the problem.
+* Use a test array, a mixed up array of Country names, based off the API i was using previously. This was done to avoid making api requests for the time being and focus on solving the problem.
 * Manage to use prefix trie logic to arrange array in alphabetical order. - done.
 * Managed to search array for an exact matched word. If the word is in the array, the console.log will print 'true'.- done.
 * Try to get array to filter down as we KeyUp each letter of the chosen search term. - not done.
@@ -163,6 +163,6 @@ To test my solution, open up the project in the terminal. Go into the src folder
 
 ## Outcome
 
-I did not get as close to solving the problem as I originally intended to. This meant I was not fully able to get an array of 3 counties closest matched to the search Term alphabetically. This also meant I was not able to unit test.
+I did not get as close to solving the problem as I originally intended to. This meant I was not fully able to get an array of 3 countries closest matched to the search term alphabetically. This also meant I was not able to unit test.
 
 I enjoyed the past few days trying to solve this. It was definitely challenging as we did not cover such heavy data handling on the 3 month General Assembly Software Engineering course. This approach to the challenge was a bit more computer science heavy than I have been exposed to. I am keen to learn more about it.
