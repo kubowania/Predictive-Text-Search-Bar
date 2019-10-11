@@ -123,7 +123,13 @@ To start my app please:
 * Type 'npm run serve' to start the project on localhost:8000
 
 
+
+
+.
 # Update and improvements
+
+First submission: Tuesday October 8th 12.32PM
+Second submission: Friday October 11th 13.00PM
 
 ## Feedback
 
