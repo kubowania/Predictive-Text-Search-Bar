@@ -76,9 +76,8 @@ As it is, the suggested Countries populate after the second keystroke, alongside
 
 ### Featured piece of code no.1
 
-![Imgur} (https://i.imgur.com/IloFumg.png?1)
-As you can see, the search is not case sensitive.
 
+![Imgur](https://i.imgur.com/UZITMP9.png?1)
 This is the filter function for getting country.name's that start with the typed query.
 
 ```javascript
@@ -91,36 +90,13 @@ This is the filter function for getting country.name's that start with the typed
 ```
 
 
-### Featured piece of code no.2
-
-![Imgur](https://i.imgur.com/UZITMP9.png?1)
-
-This is what allows us to map over the Card Component up to 3 times. The Card Component can be linked for a click-through onto a 'SHOW page' of each Country, that will populate itself based on the props passed for each one. This automation is great for when new objects are added to the API.
-
-```javascript
-            <div className="autocomplete">
-              <div className="columns is-multiline">
-                {filteredCountries.slice(0, 3).map(country =>
-                  <div className="column is-one-third-tablet is-one-third-desktop" key={country.alpha2Code}>
-                      <Card
-                        name={country.name}
-                      />
-                  </div>
-                )
-              }
-              </div>
-            </div>
-          }
-```
-
-
 ## Visuals
 
 It was important for me to get the brand essence of Lyvly. To do so I inspected the website and chose the exact HEX  and RGB colour codes and fonts to create my app.
 
 Thank you
 
-## Visuals
+## Start App
 
 To start my app please:
 * Download the project

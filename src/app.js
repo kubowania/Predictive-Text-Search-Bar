@@ -5,6 +5,7 @@ import './style.scss'
 import Card from './components/Card'
 import _ from 'lodash'
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -13,9 +14,12 @@ class App extends React.Component {
       query: ''
     }
   }
+
+
   onQuery(nextQuery) {
     this.setState({query: nextQuery})
   }
+
   fetchCountries() {
     fetch('https://restcountries.eu/rest/v2/all')
       .then(result => result.json())
@@ -23,13 +27,11 @@ class App extends React.Component {
         this.setState({countries: resultJson})
       })
   }
+
   componentDidMount() {
     this.fetchCountries()
   }
 
-
-  // if filteredCountries.length === 0 && this.state.query.length > 0
-  //return
   suggestedCountries() {
     const re = new RegExp(this.state.query, 'i')
     const filterCountries = _.filter(this.state.countries, country => {
@@ -40,17 +42,15 @@ class App extends React.Component {
   }
 
 
+
   render() {
+    console.log(this.state)
     const filteredCountries = this.state.countries.filter(country => {
       return (
         this.state.query.length > 0 &&
         country.name.toLowerCase().startsWith(this.state.query.toLowerCase())
       )
     })
-
-    console.log(this.state)
-    console.log(this.state.countries.length)
-
     return (
       <section className="section">
         <div className="container has-text-centered">
@@ -58,7 +58,6 @@ class App extends React.Component {
           <h1>Our Homes from around<br/>the world</h1>
           <div className="spacer"/>
           <div className="column">
-
             <div className="field">
               <input
                 placeholder="search"
@@ -66,7 +65,6 @@ class App extends React.Component {
                 value={this.state.query}
                 onChange={event => this.onQuery(event.target.value)} />
             </div>
-
             {/* DISPLAY 3 AUTOCOMPLETE OPTIONS FROM API */}
             <div className="autocomplete">
               <div className="columns is-multiline">
@@ -80,7 +78,6 @@ class App extends React.Component {
                 }
               </div>
             </div>
-
             {/* SUGGEST ALTERNATIVE 3 OPTIONS FROM API THAT HAVE CONSECUTIVE LETTERS IN STRING*/}
             <div className="suggestionbox">
               <h2>Alternative suggestions:</h2>
@@ -95,7 +92,6 @@ class App extends React.Component {
                 )}
               </div>
             </div>
-
           </div>
         </div>
       </section>
