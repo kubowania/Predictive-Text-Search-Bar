@@ -143,17 +143,17 @@ Some are more popular than others - if you can't find any reasonable solutions t
 
 To improve my challenge I started off by tidying my code even further, paying attention to the spacing the the main App, as well as removing console.logs and comments that were intended for myself. I left any that would aid in reading the code.
 
-I was very intrigued about the Prefix Tries. As I do not have any background in Computer Science this concept was new to me. I took a day to research this. I now understand why it is used for very large data structures, as it can reduce search time by up to half. It does so my discarding arrays quickly, especially in a binary search. I decided to do a binary search for my challenge. I did so by writing code that considers a value to have a 'left' and a 'right' side. In terms of numbers, anything smaller than a 5 for example, is considered to go left, and anything larger than a 5 is considered to go right (Taking inspiration from the Trie diagram).
+I was very intrigued about the Prefix Tries. As I do not have any background in Computer Science this concept was new to me. I took a day to research this. I now understand why it is used for very large data structures, as it can reduce search time by up to half. It does so by discarding arrays quickly, especially in a binary search. I decided to do a binary search for my challenge. I did so by writing code that considers a value to have a 'left' and a 'right' side. In terms of numbers, anything smaller than a 5 for example, is considered to go left, and anything larger than a 5 is considered to go right (Taking inspiration from the Trie diagram).
 
 ### Quick skim of approach:
 
 * Research Prefix Tries
 * Reproduce my challenge in a seperate file called test.js
 * Use a test array, a mixed up array of Country names, based off the API i was using previously. This was done to avoid making api requests for the time being and ficus on solving the problem.
-* Manage to use prefix trie logic to arrange array in alphabetical order. - done
-* Managed to search array for an exact matched word. If the word is in the array, the console.log will print 'true'.- done
-* Try to get array to filter down as we KeyUp each letter of the chosen search term.
-* Try to limit array to maximum 3 closest matches - ie the first three as we are filtering alphabetically now.
+* Manage to use prefix trie logic to arrange array in alphabetical order. - done.
+* Managed to search array for an exact matched word. If the word is in the array, the console.log will print 'true'.- done.
+* Try to get array to filter down as we KeyUp each letter of the chosen search term. - not done.
+* Try to limit array to maximum 3 closest matches - ie the first three as we are filtering alphabetically now. - not done.
 
 ### Test my solution
 
