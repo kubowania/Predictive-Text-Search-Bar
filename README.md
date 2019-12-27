@@ -1,6 +1,6 @@
 # Simple Predictive Text Search from open API
 
-Search bar
+To run my app, please scroll to the bottom of this article.
 
 ## Overview
 Develop a predictive text mechanism similar to what you see on smartphone keyboards. Given an input sequence of characters, you should output the 3 most likely words the user is trying to type, including prefix matches. For example, with the input “di” you might suggest [“did”, “dinner”, “didn’t”]. It is fine to have fewer than 3 matches where others aren’t possible, e.g. “newe” might only return [“newer”, “newest”]
